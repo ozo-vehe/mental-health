@@ -49,8 +49,12 @@ const socials = [
         </div>
 
         <div class="socials lg:flex md:flex hidden gap-4">
-          <RouterLink class="bg-mh_light rounded-full w-[35px] h-[35px] p-2" v-for="(social, index) in socials"
-            :key="index" :to="social.link">
+          <RouterLink
+            class="bg-mh_light rounded-full w-[35px] h-[35px] p-2"
+            v-for="(social, index) in socials"
+            :key="index"
+            :to="social.link"
+          >
             <img class="" :src="social.icon" :alt="social.name" />
           </RouterLink>
         </div>
@@ -93,7 +97,9 @@ const socials = [
           </li>
 
           <li>
-            <RouterLink class="text-mh_light capitalize" to="/">terms of services</RouterLink>
+            <RouterLink class="text-mh_light capitalize" to="/"
+              >terms of services</RouterLink
+            >
           </li>
         </ul>
       </div>
@@ -108,9 +114,17 @@ const socials = [
         <p>Send us a message and we will contact you as soon as possible.</p>
 
         <div class="input_field flex items-center h-[50px] w-full mt-6">
-          <input class="h-full w-full pl-2 placeholder:text-mh_dark_text outline-none border-none bg-[#F5EADF]"
-            type="text" name="message" id="message" required placeholder="Message" />
-          <button class="w-[150px] capitalize rounded-r-[8px] h-full bg-[#E2C2A1] font-[500] text-mh_light">
+          <input
+            class="h-full w-full pl-2 placeholder:text-mh_dark_text outline-none border-none bg-[#F5EADF]"
+            type="text"
+            name="message"
+            id="message"
+            required
+            placeholder="Message"
+          />
+          <button
+            class="w-[150px] capitalize rounded-r-[8px] h-full bg-[#E2C2A1] font-[500] text-mh_light"
+          >
             send
           </button>
         </div>
@@ -118,8 +132,13 @@ const socials = [
     </div>
 
     <div class="socials lg:hidden md:hidden flex gap-4 mt-8">
-      <RouterLink v-for="(social, index) in socials" :key="index" :to="social.link">
-        <img class="border w-[25px] h-[25px] rounded-full" :src="social.icon" :alt="social.name" />
+      <RouterLink
+        class="bg-mh_light rounded-full w-[35px] h-[35px] p-2"
+        v-for="(social, index) in socials"
+        :key="index"
+        :to="social.link"
+      >
+        <img class="" :src="social.icon" :alt="social.name" />
       </RouterLink>
     </div>
 
