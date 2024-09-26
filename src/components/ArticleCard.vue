@@ -9,20 +9,23 @@ defineProps({
 
 <template>
   <template v-if="type == 'articles'">
-    <div v-if="article" class="article_card w-[420px] rounded-[8px] shadow-md">
-      <div class="w-full rounded-t-[8px] h-[350px] overflow-hidden">
+    <div v-if="article" class="article_card max-w-[420px] rounded-[8px] shadow-md">
+      <div class="w-full rounded-t-[8px] lg:h-[350px] md:h-[300px] h-[250px] overflow-hidden">
         <img class="w-full h-full object-fit" :src="article_image" :alt="article.title" />
       </div>
 
-      <div class="article_content h-[300px] overflow-hidden p-4">
-        <h3 class="text-mh_h5 font-[600] leading-[1.3] mb-2">{{ article.title }}</h3>
+      <div class="article_content max-h-[300px] overflow-hidden p-4">
+        <h3 class="lg:text-mh_h5 md:text-mh_h6 text-[20px] font-[600] leading-[1.3] mb-2">
+          {{ article.title }}
+        </h3>
         <p class="line-clamp-4 lg:text-mh_h6 md:text-[18px] text-[16px] my-2">
           {{ article.content }}
         </p>
-        <p class="lg:text-mh_h6 md:text-[18px] text-[16px] mt-8">
+        <p class="lg:text-[18px] md:text-[16px] text-[14px] mt-8">
           <span class="font-[500]">Mental health </span>
-          <span class="text-[16px] border-l-2 px-2 border-mh_dark_text text-mh_subtle_text">{{ article.publishedAt
-            }}</span>
+          <span
+            class="lg:text-[16px] md:text-[14px] text-[12px] border-l-2 px-2 border-mh_dark_text text-mh_subtle_text">{{
+              article.publishedAt }}</span>
         </p>
       </div>
     </div>

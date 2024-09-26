@@ -5,27 +5,27 @@ const socials = [
   {
     icon: "",
     name: "LinkedIn",
-    link: "",
+    link: "/",
   },
   {
     icon: "",
     name: "Facebook",
-    link: "",
+    link: "/",
   },
   {
     icon: "",
     name: "X",
-    link: "",
+    link: "/",
   },
   {
     icon: "",
     name: "Instagram",
-    link: "",
+    link: "/",
   },
   {
     icon: "",
     name: "WhatsApp",
-    link: "",
+    link: "/",
   },
 ];
 // 130D06
@@ -38,12 +38,12 @@ const socials = [
       <div class="lg:max-w-[250px] md:max-w-[250px] w-full">
         <LogoComponent text="logo" class="mb-6" mh_class="text-mh_light" />
 
-        <div class="mb-4">
+        <div class="mb-4 lg:block md:block hidden">
           <p>Emali: info@hevolve.org</p>
           <p>Phone: +234 8124 900 0000</p>
         </div>
 
-        <div class="socials flex gap-4">
+        <div class="socials lg:flex md:flex hidden gap-4">
           <RouterLink v-for="(social, index) in socials" :key="index" :to="social.link">
             <img class="border w-[25px] h-[25px] rounded-full" :src="social.icon" :alt="social.name" />
           </RouterLink>
@@ -93,6 +93,11 @@ const socials = [
       </div>
 
       <div class="max-w-[350px]">
+        <div class="mb-4 lg:hidden md:hidden block">
+          <p>Emali: info@hevolve.org</p>
+          <p>Phone: +234 8124 900 0000</p>
+        </div>
+
         <h3 class="text-mh_h6">Got a request?</h3>
         <p>Send us a message and we will contact you as soon as possible.</p>
 
@@ -104,6 +109,12 @@ const socials = [
           </button>
         </div>
       </div>
+    </div>
+
+    <div class="socials lg:hidden md:hidden flex gap-4 mt-8">
+      <RouterLink v-for="(social, index) in socials" :key="index" :to="social.link">
+        <img class="border w-[25px] h-[25px] rounded-full" :src="social.icon" :alt="social.name" />
+      </RouterLink>
     </div>
 
     <div class="footer_copywrites border-t mt-8 py-10 w-[90%]">
