@@ -1,29 +1,34 @@
 <script setup lang="ts">
 import LogoComponent from "./LogoComponent.vue";
+// import linked_in from "../assets/icons/linkedin.png";
+// import whatsapp from "../assets/icons/whatsapp.png";
+// import facebook from "../assets/icons/facebook.png";
+// import instagram from "../assets/icons/instagram.png";
+// import x from "../assets/icons/x.png";
 
 const socials = [
   {
-    icon: "",
+    icon: "https://img.icons8.com/ios-filled/50/linkedin-2.png",
     name: "LinkedIn",
     link: "/",
   },
   {
-    icon: "",
+    icon: "https://img.icons8.com/ios-filled/50/facebook-new.png",
     name: "Facebook",
     link: "/",
   },
   {
-    icon: "",
+    icon: "https://img.icons8.com/ios-filled/50/twitter.png",
     name: "X",
     link: "/",
   },
   {
-    icon: "",
+    icon: "https://img.icons8.com/ios/50/instagram-new.png",
     name: "Instagram",
     link: "/",
   },
   {
-    icon: "",
+    icon: "https://img.icons8.com/ios/50/whatsapp.png",
     name: "WhatsApp",
     link: "/",
   },
@@ -44,8 +49,9 @@ const socials = [
         </div>
 
         <div class="socials lg:flex md:flex hidden gap-4">
-          <RouterLink v-for="(social, index) in socials" :key="index" :to="social.link">
-            <img class="border w-[25px] h-[25px] rounded-full" :src="social.icon" :alt="social.name" />
+          <RouterLink class="bg-mh_light rounded-full w-[35px] h-[35px] p-2" v-for="(social, index) in socials"
+            :key="index" :to="social.link">
+            <img class="" :src="social.icon" :alt="social.name" />
           </RouterLink>
         </div>
       </div>
