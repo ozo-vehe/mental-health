@@ -1,20 +1,29 @@
 <script setup lang="ts">
 import checkbox from "../../assets/icons/checkbox.png";
+import { ref } from "vue";
 
 // Functions
 const handleSubmit = async () => {
   console.log("Submitting...");
 };
+
+// Data
+const type = ref("text");
 </script>
 
 <template>
   <section class="book_session">
     <div class="lg:px-20 md:px-12 px-4 py-20">
-      <h2 class="lg:text-mh_h2 md:text-mh_h3 text-mh_h4 font-[600] max-w-[750px]">Book a counseling session</h2>
-      <p class="font-[600] text-mh_h6">Take the first step towards mental wellness</p>
+      <h2 class="lg:text-mh_h2 md:text-mh_h3 text-mh_h4 font-[600] max-w-[750px] leading-tight">
+        Book a counseling session
+      </h2>
+      <p class="font-[600] lg:text-mh_h6 md:text-[18px] text-[16px]">
+        Take the first step towards mental wellness
+      </p>
 
-      <div class="flex flex-wrap items-center lg:justify-between md:justify-between justify-center gap-10 w-full mt-16">
-        <div class="max-w-[350px] flex flex-col gap-8">
+      <div
+        class="flex flex-wrap items-center lg:justify-between md:justify-between justify-center gap-10 w-full lg:mt-16 md:mt-8 mt-8">
+        <div class="max-w-[350px] flex flex-col lg:gap-8 md:gap-6 gap-6">
           <div class="flex items-center gap-2">
             <img :src="checkbox" alt="Checkbox" />
             <p class="font-[500] ml-2">Identify your needs.</p>
@@ -46,11 +55,11 @@ const handleSubmit = async () => {
             <div class="h-[50px] flex gap-4 w-full">
               <!-- Name -->
               <input
-                class="w-1/2 px-2 h-full bg-[#F5EADF] outline-none border border-[#130D06] rounded-[8px] placeholder:text-[#130D06]"
+                class="w-1/2 px-2 h-full bg-[#F5EADF] outline-none border border-[#130D06] rounded-[8px] placeholder:text-[#130D06] lg:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:text-[14px]"
                 type="text" name="name" id="name" placeholder="Enter your name" required />
               <!-- Email Address -->
               <input
-                class="w-1/2 px-2 h-full bg-[#F5EADF] outline-none border border-[#130D06] rounded-[8px] placeholder:text-[#130D06]"
+                class="w-1/2 px-2 h-full bg-[#F5EADF] outline-none border border-[#130D06] rounded-[8px] placeholder:text-[#130D06] lg:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:text-[14px]"
                 type="email" name="email" id="email" placeholder="Enter email address" required />
             </div>
 
@@ -58,7 +67,9 @@ const handleSubmit = async () => {
               <!-- Consultation Type -->
               <div
                 class="w-full flex items-center justify-center gap-2 h-full border border-[#130D06] rounded-[8px] pr-2 overflow-hidden">
-                <select class="w-full px-2 h-full bg-[#F5EADF] outline-none border-none" name="date" id="date" required>
+                <select
+                  class="w-full px-2 h-full bg-[#F5EADF] outline-none border-none lg:text-[16px] md:text-[16px] text-[14px]"
+                  name="date" id="date" required>
                   <option value="">Consultation type</option>
                   <option value="type1">Type1</option>
                   <option value="type2">Type2</option>
@@ -70,8 +81,9 @@ const handleSubmit = async () => {
               <!-- Date -->
               <div
                 class="w-1/2 flex items-center justify-center gap-2 h-full border border-[#130D06] rounded-[8px] pr-2 overflow-hidden">
-                <input class="w-full px-2 h-full bg-[#F5EADF] outline-none border-none placeholder:text-[#130D06]"
-                  type="date" name="date" id="date" placeholder="Date" required />
+                <input
+                  class="w-full px-2 h-full bg-[#F5EADF] outline-none border-none placeholder:text-[#130D06] lg:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:text-[14px] lg:text-[16px] md:text-[16px] text-[14px]"
+                  :type="type" name="date" id="date" placeholder="Date" @focus="type = 'date'" required />
 
                 <!-- <img class="w-[20px] h-[20px] cursor-pointer" src="../assets/icons/calender_waiting.png"
                   alt="Calender" /> -->
@@ -79,7 +91,8 @@ const handleSubmit = async () => {
               <!-- Phone number -->
               <div
                 class="w-1/2 flex items-center justify-center gap-2 h-full border border-[#130D06] rounded-[8px] pr-2 overflow-hidden">
-                <input class="w-full px-2 h-full bg-[#F5EADF] outline-none border-none placeholder:text-[#130D06]"
+                <input
+                  class="w-full px-2 h-full bg-[#F5EADF] outline-none border-none placeholder:text-[#130D06] lg:placeholder:text-[16px] md:placeholder:text-[16px] placeholder:text-[14px]"
                   type="tel" name="phone_number" id="phone_number" placeholder="Phone number" required />
                 <img class="w-[20px] h-[20px] cursor-pointer"
                   src="https://img.icons8.com/windows/96/130D06/add-phone.png" alt="add-phone" />

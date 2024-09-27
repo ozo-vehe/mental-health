@@ -31,8 +31,8 @@ const show_navbar = ref(false);
 </script>
 
 <template>
-  <nav class="bg-gray-50 lg:px-20 md:px-12 px-4 h-[80px] flex justify-between items-center">
-    <LogoComponent text="logo" />
+  <nav class="bg-gray-50 lg:px-20 md:px-12 px-4 h-[80px] fixed flex justify-between items-center w-full z-10">
+    <LogoComponent @click="show_navbar = false" text="logo" />
     <!-- Desktop Navigation -->
     <div class="navlinks hidden lg:block md:block">
       <ul
@@ -67,7 +67,8 @@ const show_navbar = ref(false);
         <ul
           class="flex flex-col gap-4 capitalize p-1 rounded-l-md text-mh_subtle_text font-[600] text-mh_body_big border-2 border-mh_accent/25">
           <RouterLink class="p-[10px] w-fit" router-link-active :to="link.path" v-for="(link, index) in navLinks"
-            :key="index">{{ link.name }}
+            :key="index" @click="show_navbar = !show_navbar">
+            {{ link.name }}
           </RouterLink>
         </ul>
         <RouterLink

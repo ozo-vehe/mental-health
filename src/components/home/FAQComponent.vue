@@ -36,10 +36,13 @@ const questions = reactive([
 <template>
   <section class="flex flex-wrap flex-col gap-4 py-20 justify-center items-center lg:px-20 md:px-12 px-4">
     <header class="flex flex-col items-center gap-4">
-      <h2 class="lg:text-mh_h2 md:text-mh_h3 text-mh_h4 font-[600] text-center">Frequently Asked Questions</h2>
+      <h2 class="lg:text-mh_h2 md:text-mh_h3 text-mh_h4 font-[600] text-center">
+        Frequently Asked Questions
+      </h2>
     </header>
 
-    <div class="question_container mt-16 flex flex-wrap items-start justify-center w-full gap-x-32 gap-y-6">
+    <div
+      class="question_container lg:mt-16 md:mt-8 mt-8 flex flex-wrap items-start justify-center w-full gap-x-32 gap-y-6">
       <div v-for="question in questions" :key="question.id"
         class="question w-full p-6 rounded-xl flex flex-col transition-all duration-300"
         :class="{ 'bg-[#DBB38A]': question.active, 'bg-[#F5EADF]': !question.active }">

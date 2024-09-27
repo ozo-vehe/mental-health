@@ -32,7 +32,8 @@ import self_help from "../../assets/icons/self_help.png";
     </div>
 
     <div class="lg:px-20 md:px-12 px-4 py-20">
-      <h2 class="text-mh_h2 font-[600] leading-tight max-w-[750px]">
+      <h2
+        class="font-[600] leading-tight max-w-[750px] lg:text-mh_h2 md:text-mh_h3 text-mh_h4 lg:text-left md:text-left text-center">
         HEvolve offers comprehensive mental health services tailored to men
       </h2>
 
@@ -43,10 +44,10 @@ import self_help from "../../assets/icons/self_help.png";
             <img class="w-[35px] rounded-full" :src="counseling" alt="Counseling" />
           </div>
           <div>
-            <h3 class="text-mh_h4 font-[600] leading-[1.2]">
+            <h3 class="lg:text-mh_h4 md:text-mh_h5 text-[22px] font-[600] leading-[1.2]">
               Counseling & Consultation:
             </h3>
-            <p class="text-[16px] mt-2">
+            <p class="lg:text-[16px] md:text-[16px] text-[14px] mt-2">
               Personalized sessions to help man address their mental health issues.
             </p>
           </div>
@@ -57,8 +58,10 @@ import self_help from "../../assets/icons/self_help.png";
             <img class="w-[35px] rounded-full" :src="medication" alt="Medication" />
           </div>
           <div>
-            <h3 class="text-mh_h4 font-[600] leading-[1.2]">Medication Management:</h3>
-            <p class="text-[16px] mt-2">
+            <h3 class="lg:text-mh_h4 md:text-mh_h5 text-[22px] font-[600] leading-[1.2]">
+              Medication Management:
+            </h3>
+            <p class="lg:text-[16px] md:text-[16px] text-[14px] mt-2">
               Professional guidance on the use of psychiatric medication.
             </p>
           </div>
@@ -69,8 +72,10 @@ import self_help from "../../assets/icons/self_help.png";
             <img class="w-[35px] rounded-full" :src="support" alt="Support" />
           </div>
           <div>
-            <h3 class="text-mh_h4 font-[600] leading-[1.2]">Support Groups:</h3>
-            <p class="text-[16px] mt-2">
+            <h3 class="lg:text-mh_h4 md:text-mh_h5 text-[22px] font-[600] leading-[1.2]">
+              Support Groups:
+            </h3>
+            <p class="lg:text-[16px] md:text-[16px] text-[14px] mt-2">
               Join others in a safe space to share experiemce and learn from each other.
             </p>
           </div>
@@ -81,8 +86,10 @@ import self_help from "../../assets/icons/self_help.png";
             <img class="w-[35px] rounded-full" :src="online" alt="Online" />
           </div>
           <div>
-            <h3 class="text-mh_h4 font-[600] leading-[1.2]">Online Counseling:</h3>
-            <p class="text-[16px] mt-2">
+            <h3 class="lg:text-mh_h4 md:text-mh_h5 text-[22px] font-[600] leading-[1.2]">
+              Online Counseling:
+            </h3>
+            <p class="lg:text-[16px] md:text-[16px] text-[14px] mt-2">
               Access professional help from the comfort of your home.
             </p>
           </div>
@@ -93,8 +100,10 @@ import self_help from "../../assets/icons/self_help.png";
             <img class="w-[35px] rounded-full" :src="education" alt="Education" />
           </div>
           <div>
-            <h3 class="text-mh_h4 font-[600] leading-[1.2]">Education & Outreach:</h3>
-            <p class="text-[16px] mt-2">
+            <h3 class="lg:text-mh_h4 md:text-mh_h5 text-[22px] font-[600] leading-[1.2]">
+              Education & Outreach:
+            </h3>
+            <p class="lg:text-[16px] md:text-[16px] text-[14px] mt-2">
               Training and workshops to promote mental health awareness.
             </p>
           </div>
@@ -105,8 +114,10 @@ import self_help from "../../assets/icons/self_help.png";
             <img class="w-[35px] rounded-full" :src="self_help" alt="Self Help" />
           </div>
           <div>
-            <h3 class="text-mh_h4 font-[600] leading-[1.2]">Self Help Resources:</h3>
-            <p class="text-[16px] mt-2">
+            <h3 class="lg:text-mh_h4 md:text-mh_h5 text-[22px] font-[600] leading-[1.2]">
+              Self Help Resources:
+            </h3>
+            <p class="lg:text-[16px] md:text-[16px] text-[14px] mt-2">
               Books and materials to guide you on your mental health journey.
             </p>
           </div>

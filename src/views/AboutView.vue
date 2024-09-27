@@ -9,9 +9,11 @@ import ButtonComponent from "../components/ButtonComponent.vue";
       alt="Hero Image" />
 
     <div class="hero_text text-center relative text-mh_light max-w-[800px]">
-      <h1 class="text-mh_large font-[700] leading-tight">About Us</h1>
+      <h1 class="lg:text-mh_large md:text-mh_h1 text-mh_h1 font-[700] leading-tight">
+        About Us
+      </h1>
 
-      <p class="my-2 text-[22px]">
+      <p class="my-2 lg:text-[22px] md:text-[18px] text-[16px]">
         We provide a wide range of services, from counseling and consultations to advocacy
         and edication, all designed to meet the unique needds of men in underserved
         communities.
@@ -25,13 +27,12 @@ import ButtonComponent from "../components/ButtonComponent.vue";
 
   <main>
     <!-- About HEvolve Section -->
-    <section
-      class="bg-[#efefef] lg:px-20 md:px-12 px-4 py-20 flex flex-wrap items-center justify-center gap-x-16 gap-y-4">
+    <section class="bg-[#efefef] lg:px-20 md:px-12 px-4 py-20 flex flex-wrap items-center justify-center gap-16">
       <div class="max-w-[700px]">
         <div
           class="border-l border-mh_body_text pb-10 px-4 relative before:absolute before:w-[12px] before:h-[12px] before:rounded-full before:bg-mh_nude before:top-0 before:-left-[6px]">
           <h3
-            class="px-3 font-[600] text-mh_h4 relative z-[1] before:absolute before:w-[70px] before:h-full before:bg-[#F5EADF] before:left-0 before:-z-10 mb-2">
+            class="px-3 font-[600] lg:text-mh_h4 md:text-mh_h5 text-[22px] relative z-[1] before:absolute before:w-[70px] before:h-full before:bg-[#F5EADF] before:left-0 before:-z-10 mb-2">
             About HEvlove
           </h3>
           <p class="font[500] px-3">
@@ -44,7 +45,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
         <div
           class="border-l border-mh_body_text pb-10 px-4 relative before:absolute before:w-[12px] before:h-[12px] before:rounded-full before:bg-mh_nude before:top-4 before:-left-[6px]">
           <h3
-            class="px-3 font-[600] text-mh_h4 relative z-[1] before:absolute before:w-[70px] before:h-full before:bg-[#F5EADF] before:left-0 before:-z-10 mb-2">
+            class="px-3 font-[600] lg:text-mh_h4 md:text-mh_h5 text-[22px] relative z-[1] before:absolute before:w-[70px] before:h-full before:bg-[#F5EADF] before:left-0 before:-z-10 mb-2">
             Our Mission
           </h3>
           <p class="font[500] px-3">
@@ -57,7 +58,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
         <div
           class="border-l border-mh_body_text px-4 relative before:absolute before:w-[12px] before:h-[12px] before:rounded-full before:bg-mh_nude before:bottom-0 before:-left-[6px]">
           <h3
-            class="px-3 font-[600] text-mh_h4 relative z-[1] before:absolute before:w-[70px] before:h-full before:bg-[#F5EADF] before:left-0 before:-z-10 mb-2">
+            class="px-3 font-[600] lg:text-mh_h4 md:text-mh_h5 text-[22px] relative z-[1] before:absolute before:w-[70px] before:h-full before:bg-[#F5EADF] before:left-0 before:-z-10 mb-2">
             Our Vision
           </h3>
           <p class="font[500] px-3">
@@ -68,7 +69,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
         </div>
       </div>
 
-      <div class="image_container w-[430px] h-[530px] relative p-4">
+      <div class="image_container lg:w-[430px] md:w-[400px] w-[350px] lg:h-[530px] md:h-[500px] h-[450px] relative p-4">
         <img class="w-full h-full object-fit" src="../assets/images/abt_image.png" alt="About Image" />
 
         <!-- Image Style Bars -->
@@ -94,7 +95,9 @@ import ButtonComponent from "../components/ButtonComponent.vue";
 
       <div
         class="founders_story py-8 lg:px-40 md:px-12 px-4 shadow-md max-w-[800px] min-h-[350px] flex flex-col items-center justify-center bg-[#D9D9D9] rounded-[8px]">
-        <h3 class="text-mh_h3 mb-4">Our Founder's Story</h3>
+        <h3 class="text-mh_h3 mb-4 lg:text-left md:text-left text-center">
+          Our Founder's Story
+        </h3>
         <p class="font-[500] text-center">
           Ridwanullahi Amoo, the founder of HEvolve, is a survivor of severe mental health
           challenges. Diagnosed with bipolar disorder and PTSD, Ridwan faced the barriers
@@ -159,13 +162,14 @@ import ButtonComponent from "../components/ButtonComponent.vue";
         </h3>
 
         <div class="max-w-[450px]">
-          <p class="font-[500] mb-6">
+          <p class="font-[500] mb-6 lg:text-left md:text-left text-center">
             Join a community of like minded individuals in your journey to mental
             wholeness. Don't miss out on the support and knowledge that can make a
             difference in your life.
           </p>
 
-          <ButtonComponent text="Join us now" mh_class="bg-mh_dark_text font-[500] px-10 text-[#f5eadf] w-[80%]" />
+          <ButtonComponent text="Join us now"
+            mh_class="bg-mh_dark_text font-[500] px-10 text-[#f5eadf] lg:w-[80%] md:w-[80%] w-full" />
         </div>
       </div>
     </section>
