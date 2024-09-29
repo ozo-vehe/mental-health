@@ -113,7 +113,7 @@ export const videos = [
     id: 1,
     title: "Understanding Men's Mental Health",
     videoLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    description: "An in-depth look at the unique challenges men face in mental health and strategies for improvement. Exploring the benefits of therapy for men and how to overcome societal barriers.",
+    description: "Stigma surrounding mental health issues is a major factor preventing men from seeking help. Traditional views on masculinity often equate vulnerability with weakness, making it difficult for men to admit they need support.",
     author: "Dr. John Smith",
     uploadDate: "2023-06-15T14:30:00Z",
     duration: "15:23",

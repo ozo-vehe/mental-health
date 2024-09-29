@@ -28,7 +28,7 @@ import { articles, videos } from "@/sample";
     <!-- Articles -->
     <section class="bg-[#efefef] lg:px-20 md:px-12 px-4 pt-20 pb-10 flex flex-col items-center justify-center gap-8">
       <h2 class="w-full text-mh_h3 font-[700]">Articles</h2>
-      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-8">
+      <div class="flex lg:flex-nowrap md:flex-wrap flex-wrap items-center justify-center gap-x-4 gap-y-8">
         <template v-for="article in articles.slice(0, 3)" :key="article.id">
           <ArticleCard :article="article" type="articles" />
         </template>
@@ -48,7 +48,7 @@ import { articles, videos } from "@/sample";
     <!-- Recommendations -->
     <section class="bg-[#efefef] lg:px-20 md:px-12 px-4 py-10 flex flex-col justify-center gap-8">
       <h2 class="w-full text-mh_h3 font-[700]">Recommended articles</h2>
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-8">
+      <div class="flex flex-wrap items-center gap-x-12 gap-y-8">
         <template v-for="article in articles.slice(0, 4)" :key="article.id">
           <ArticleCard :article="article" />
         </template>
