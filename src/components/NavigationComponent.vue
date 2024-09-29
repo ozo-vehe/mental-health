@@ -36,7 +36,7 @@ const show_navbar = ref(false);
     <!-- Desktop Navigation -->
     <div class="navlinks hidden lg:block md:block">
       <ul
-        class="flex gap-4 capitalize p-1 bg-[#e3e3e3] rounded-md text-mh_subtle_text font-[600] text-mh_body_big border-2 border-mh_accent/25">
+        class="flex gap-4 capitalize p-1 bg-[#F8F5F0] rounded-md text-mh_subtle_text font-[600] text-mh_body_big border-2 border-mh_accent/25">
         <RouterLink class="p-[10px] w-fit" router-link-active :to="link.path" v-for="(link, index) in navLinks"
           :key="index">{{ link.name }}
         </RouterLink>
