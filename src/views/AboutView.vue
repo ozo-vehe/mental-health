@@ -4,7 +4,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
 
 <template>
   <header
-    class="home_hero overflow-hidden relative min-h-[100vh] flex items-center justify-center lg:px-20 md:px-12 px-4">
+    class="home_hero overflow-hidden relative lg:min-h-[100vh] md:min-h-[90vh] min-h-[80vh] flex lg:items-center md:items-center items-end justify-center lg:px-20 md:px-12 px-4 lg:pb-0 md:pb-0 pb-20">
     <img class="absolute top-0 left-0 w-full h-full object-cover" src="../assets/images/abt_header_image.png"
       alt="Hero Image" />
 
@@ -20,7 +20,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
       </p>
 
       <div class="hero_btn flex items-center justify-center mt-8">
-        <ButtonComponent text="get involved" mh_class="bg-mh_nude font-bold px-12 text-gray-900" />
+        <ButtonComponent text="Get Involved" mh_class="bg-mh_nude font-bold px-12 text-gray-900" />
       </div>
     </div>
   </header>
@@ -87,14 +87,14 @@ import ButtonComponent from "../components/ButtonComponent.vue";
     </section>
 
     <!-- Founder's Story Section -->
-    <section class="bg-[#F5EADF] lg:px-20 md:px-12 px-4 py-20 flex flex-wrap items-center justify-center">
-      <div class="about_video w-[300px] h-[300px] rounded-[8px] bg-[#A5A4A4] flex items-center justify-center">
+    <section class="bg-[#F5EADF] lg:px-20 md:px-12 px-4 py-20 flex flex-wrap gap-y-8 items-center justify-center">
+      <div class="about_video w-[300px] h-[300px] rounded-[8px] bg-[#A5A4A4] flex items-center justify-center lg:order-1 md:order-1 order-2">
         <img class="shadow-[0_35px_60px_-15px_rgba(0,0,0,1)] rounded-full cursor-pointer"
           src="../assets/icons/play_btn.png" alt="Play Button" />
       </div>
 
       <div
-        class="founders_story py-8 lg:px-40 md:px-12 px-4 shadow-md max-w-[800px] min-h-[350px] flex flex-col items-center justify-center bg-[#D9D9D9] rounded-[8px]">
+        class="founders_story py-8 lg:px-40 md:px-12 px-4 shadow-md max-w-[800px] min-h-[350px] flex flex-col items-center justify-center bg-[#D9D9D9] rounded-[8px] lg:order-2 md:order-2 order-1">
         <h3 class="text-mh_h3 mb-4 lg:text-left md:text-left text-center">
           Our Founder's Story
         </h3>
@@ -112,44 +112,10 @@ import ButtonComponent from "../components/ButtonComponent.vue";
 
     <!-- What We Are Known For -->
     <section class="lg:px-20 md:px-12 px-4 py-20 flex flex-col items-center justify-center">
-      <h2 class="font-[600] text-mh_h4 text-center mb-8">What we are known for</h2>
+      <h2 class="font-[600] lg:text-mh_h2 md:text-mh_h3 text-mh_h4 text-center mb-8">What we are known for</h2>
 
-      <div class="lg:w-[70%] md:w-[80%] w-full flex flex-col items-center justify-center gap-8">
-        <div class="text-center flex items-center justify-center">
-          <p
-            class="bg-[#f5eadf] text-mh_dark_text font-[700] rounded-[30px] py-2 px-8 w-fit relative -rotate-6 text-[18px] min-w-[150px]">
-            Objectivity
-          </p>
-        </div>
-
-        <div class="text-center flex items-center justify-between w-[50%]">
-          <p
-            class="bg-[#f5eadf] text-mh_dark_text font-[700] rounded-[30px] py-2 px-8 w-fit relative -rotate-6 text-[18px] min-w-[150px]">
-            Vallant
-          </p>
-          <p
-            class="bg-[#f5eadf] text-mh_dark_text font-[700] rounded-[30px] py-2 px-8 w-fit relative -rotate-4 text-[18px] min-w-[150px]">
-            Love
-          </p>
-        </div>
-
-        <div class="text-center flex items-center justify-between w-[60%]">
-          <p class="bg-[#f5eadf] text-mh_dark_text font-[700] rounded-[30px] py-[6px] px-5 w-fit relative -rotate-6">
-            Empathy
-          </p>
-          <p class="bg-[#f5eadf] text-mh_dark_text font-[700] rounded-[30px] py-[6px] px-5 w-fit relative -rotate-6">
-            Versatility
-          </p>
-        </div>
-
-        <div class="text-center flex items-center justify-between w-[70%]">
-          <p class="bg-[#f5eadf] text-mh_dark_text font-[700] rounded-[30px] py-[6px] px-5 w-fit relative -rotate-6">
-            Humanity
-          </p>
-          <p class="bg-[#f5eadf] text-mh_dark_text font-[700] rounded-[30px] py-[6px] px-5 w-fit relative -rotate-6">
-            Ethical values
-          </p>
-        </div>
+      <div class="max-w-[850px]">
+        <img class="w-full" src="../assets/images/qualities.png" alt="Qualities">
       </div>
     </section>
 
