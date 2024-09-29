@@ -4,7 +4,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
 
 <template>
   <header
-    class="home_hero overflow-hidden relative lg:min-h-[100vh] md:min-h-[90vh] min-h-[80vh] flex items-end justify-center lg:px-20 md:px-12 px-4 pb-20">
+    class="home_hero overflow-hidden relative lg:min-h-[100vh] md:min-h-[90vh] min-h-[80vh] flex lg:items-center md:items-center items-end justify-center lg:px-20 md:px-12 px-4 lg:pb-0 md:pb-0 pb-20">
     <img class="absolute top-0 left-0 w-full h-full object-cover" src="../assets/images/stories_header_image.png"
       alt="Hero Image" />
 
