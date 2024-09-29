@@ -72,8 +72,8 @@ const show_navbar = ref(false);
           </RouterLink>
         </ul>
         <RouterLink
-          class="p-[10px] w-full h-[50px] py-2 test-center flex items-center justify-center rounded-t-[10px] bg-[#271a0c] text-mh_light capitalize"
-          to="/sign_up">Sign up
+          class="pl-4 font-[600] w-full h-[50px] py-2 flex items-center justify-start text-mh_subtle_text capitalize"
+          to="/" @click="show_navbar = !show_navbar">Sign up
         </RouterLink>
       </div>
     </div>

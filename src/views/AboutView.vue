@@ -20,7 +20,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
       </p>
 
       <div class="hero_btn flex items-center justify-center mt-8">
-        <ButtonComponent text="Get Involved" mh_class="bg-mh_nude font-bold px-12 text-gray-900" />
+        <ButtonComponent text="Get Involved" mh_class="bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-5" />
       </div>
     </div>
   </header>

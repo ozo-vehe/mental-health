@@ -15,7 +15,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
 
       <div class="hero_btn flex items-center justify-center mt-8">
         <ButtonComponent text="Share your experience"
-          mh_class="bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-3" />
+          mh_class="bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-5" />
       </div>
     </div>
   </header>
