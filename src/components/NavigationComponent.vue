@@ -46,7 +46,7 @@ const show_navbar = ref(false);
     <div class="signup_btn hidden lg:block md:block">
       <RouterLink
         class="p-[10px] w-[120px] h-[50px] py-2 test-center flex items-center justify-center rounded-[10px] bg-[#271a0c] text-mh_light capitalize"
-        to="/sign_up">Sign up
+        to="/">Sign up
       </RouterLink>
     </div>
 
