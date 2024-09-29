@@ -40,7 +40,7 @@ const handleSubmit = async () => {
 }
 </script>
 <template>
-  <main class="lg:px-20 md:px-12 px-4 py-10">
+  <main class="lg:px-20 md:px-12 px-4 pt-[150px] py-10 min-h-screen flex flex-col items-center justify-center">
     <div class="contact_header_text text-center">
       <h2 class="text-mh_h3 font-[600]">Get in touch</h2>
       <p class="font-[600] text-[18px] max-w-[450px] mx-auto">
