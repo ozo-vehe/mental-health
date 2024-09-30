@@ -126,10 +126,10 @@ import self_help from "../../assets/icons/self_help.png";
     </div>
   </section>
 
-  <section class="home_about_2 flex flex-wrap items-center bg-[#eeeeee] lg:px-20 md:px-12 px-4 py-20 justify-end">
-    <div class="max-w-[400px] p-8 text-center bg-[#D9D9D9] rounded-[8px]">
+  <section class="home_about_2 relative flex flex-wrap items-center bg-[#eeeeee] lg:px-20 md:px-12 px-4 py-20 justify-end">
+    <div class="max-w-[450px] p-8 text-center bg-[#D9D9D9] rounded-[8px] relative z-[1]">
       <h3 class="text-mh_h4 font-[400]">Empowering Men's Mental Health!</h3>
-      <p class="my-4">
+      <p class="lg:text-mh_h6 md:text-[18px] text-[16px] my-4">
         For years men's mental health has long been a silent struggle, overlooked and
         stigmatized in our society. Despite the significant impact of mental health
         challenges on men's libes, many continue to suffer in isolation.
@@ -141,9 +141,18 @@ import self_help from "../../assets/icons/self_help.png";
 
 <style scoped>
 .home_about_2 {
-  background-image: url("../../assets/images/home_abt.png");
+  background-image: url("../../assets/images/home_about.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.home_about_2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000c4;
 }
 </style>
