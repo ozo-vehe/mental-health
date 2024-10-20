@@ -31,8 +31,8 @@ const show_navbar = ref(false);
 </script>
 
 <template>
-  <nav class="bg-gray-50 lg:px-20 md:px-12 px-4 h-[80px] fixed flex justify-between items-center w-full z-10">
-    <LogoComponent @click="show_navbar = false" text="logo" />
+  <nav class="bg-gray-50 lg:px-20 md:px-12 px-4 h-[90px] fixed flex justify-between items-center w-full z-10">
+    <LogoComponent @click="show_navbar = false" component="navbar" />
     <!-- Desktop Navigation -->
     <div class="navlinks hidden lg:block md:block">
       <ul
@@ -51,7 +51,7 @@ const show_navbar = ref(false);
     </div>
 
     <!-- Mobile Navigation -->
-    <div class="lg:hidden md:hidden relative">
+    <div class="lg:hidden md:hidden">
       <img @click="show_navbar = !show_navbar" class="w-[30px] h-[30px] cursor-pointer" :class="{ hidden: show_navbar }"
         src="https://img.icons8.com/ios-filled/50/menu--v6.png" alt="menu--v6" />
 
@@ -59,20 +59,20 @@ const show_navbar = ref(false);
         src="https://img.icons8.com/material-rounded/48/delete-sign.png" :class="{ hidden: !show_navbar }"
         alt="delete-sign" />
 
-      <div class="navlinks absolute top-[55px] transition-all duration-300 z-10 bg-[#e3e3e3] shadow-md overflow-hidden"
+      <div class="navlinks absolute top-[90px] transition-all duration-300 z-10 bg-[#e3e3e3] shadow-md overflow-hidden w-full h-[100vh]"
         :class="{
-          '-right-[16px] w-[250px]': show_navbar,
-          '-right-[270px] w-[0px]': !show_navbar,
+          'right-0 w-[100%]': show_navbar,
+          'right-0 w-[0%]': !show_navbar,
         }">
         <ul
-          class="flex flex-col gap-4 capitalize p-1 rounded-l-md text-mh_subtle_text font-[600] text-mh_body_big border-2 border-mh_accent/25">
+          class="flex flex-col items-center justify-center gap-4 capitalize p-1 rounded-l-md text-mh_subtle_text font-[600] text-mh_body_big border-2 border-mh_accent/25">
           <RouterLink class="p-[10px] w-fit" router-link-active :to="link.path" v-for="(link, index) in navLinks"
             :key="index" @click="show_navbar = !show_navbar">
             {{ link.name }}
           </RouterLink>
         </ul>
         <RouterLink
-          class="pl-4 font-[600] w-full h-[50px] py-2 flex items-center justify-start text-mh_subtle_text capitalize"
+          class="font-[600] w-full h-[50px] py-2 flex items-center justify-center text-mh_subtle_text capitalize"
           to="/" @click="show_navbar = !show_navbar">Sign up
         </RouterLink>
       </div>

@@ -1,10 +1,5 @@
 <script setup lang="ts">
 import LogoComponent from "./LogoComponent.vue";
-// import linked_in from "../assets/icons/linkedin.png";
-// import whatsapp from "../assets/icons/whatsapp.png";
-// import facebook from "../assets/icons/facebook.png";
-// import instagram from "../assets/icons/instagram.png";
-// import x from "../assets/icons/x.png";
 
 const socials = [
   {
@@ -41,7 +36,7 @@ const socials = [
   <footer class="lg:px-20 md:px-12 px-4 bg-[#130D06] text-mh_light py-10">
     <div class="flex flex-wrap gap-y-8 items-start justify-between">
       <div class="lg:max-w-[250px] md:max-w-[250px] w-full">
-        <LogoComponent text="logo" class="mb-6" mh_class="text-mh_light" />
+        <LogoComponent component="footer" class="mb-6" mh_class="text-mh_light" />
 
         <div class="mb-4 lg:block md:block hidden">
           <p>Emali: info@hevolve.org</p>
@@ -115,7 +110,7 @@ const socials = [
 
         <div class="input_field flex items-center h-[50px] w-full mt-6">
           <input
-            class="h-full w-full pl-2 placeholder:text-mh_dark_text outline-none border-none bg-[#F5EADF]"
+            class="h-full w-full text-mh_dark_text pl-2 placeholder:text-mh_dark_text outline-none border-none bg-[#F5EADF]"
             type="text"
             name="message"
             id="message"

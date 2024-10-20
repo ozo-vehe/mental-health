@@ -88,9 +88,10 @@ import ButtonComponent from "../components/ButtonComponent.vue";
 
     <!-- Founder's Story Section -->
     <section class="bg-[#F5EADF] lg:px-20 md:px-12 px-4 py-20 flex flex-wrap gap-y-8 items-center justify-center">
-      <div class="about_video w-[300px] h-[300px] rounded-[8px] bg-[#A5A4A4] flex items-center justify-center lg:order-1 md:order-1 order-2">
-        <img class="shadow-[0_35px_60px_-15px_rgba(0,0,0,1)] rounded-full cursor-pointer"
-          src="../assets/icons/play_btn.png" alt="Play Button" />
+      <div
+        class="about_video w-[300px] h-[300px] rounded-[8px] bg-[#A5A4A4] flex items-center justify-center lg:order-1 md:order-1 order-2 overflow-hidden">
+        <img class="w-full h-full object-cover"
+          src="../assets/images/founder.jpeg" alt="Play Button" />
       </div>
 
       <div
