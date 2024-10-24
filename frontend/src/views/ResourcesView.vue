@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import ArticleCard from "@/components/ArticleCard.vue";
-import { articles, videos } from "@/sample";
+import { videos } from "@/sample";
+import { useArticlesStore } from "@/stores/articles";
+import { storeToRefs } from "pinia";
+
+const articlesStore = useArticlesStore();
+
+const { articles } = storeToRefs(articlesStore)
 </script>
 
 <template>
@@ -28,10 +34,13 @@ import { articles, videos } from "@/sample";
     <!-- Articles -->
     <section class="bg-[#efefef] lg:px-20 md:px-12 px-4 pt-20 pb-10 flex flex-col items-center justify-center gap-8">
       <h2 class="w-full text-mh_h3 font-[700]">Articles</h2>
-      <div class="flex lg:flex-nowrap md:flex-wrap flex-wrap items-center justify-center gap-x-4 gap-y-8">
+      <div v-if="articles.length >= 1" class="flex lg:flex-nowrap md:flex-wrap flex-wrap items-center justify-center gap-x-4 gap-y-8">
         <template v-for="article in articles.slice(0, 3)" :key="article.id">
           <ArticleCard :article="article" type="articles" />
         </template>
+      </div>
+      <div v-else>
+        <p>No article</p>
       </div>
     </section>
 

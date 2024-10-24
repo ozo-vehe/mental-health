@@ -25,7 +25,7 @@ defineProps({
           <span class="font-[500]">Mental health </span>
           <span
             class="lg:text-[16px] md:text-[14px] text-[12px] border-l-2 px-2 border-mh_dark_text text-mh_subtle_text">{{
-              article.publishedAt }}</span>
+              article.date }}</span>
         </p>
       </div>
     </div>
