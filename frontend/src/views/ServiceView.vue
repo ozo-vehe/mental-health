@@ -35,7 +35,10 @@ const handleSubmit = async () => {
       </p>
 
       <div class="hero_btn flex items-center justify-center mt-8">
-        <ButtonComponent text="Get Involved" mh_class="bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-4" />
+        <a class="min-w-[120px] min-h-[50px] text-center flex items-center justify-center rounded-[8px] bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-4"
+          href="https://calendly.com/he_volve" target="_blank">
+          Get Involved
+        </a>
       </div>
     </div>
   </header>
@@ -47,7 +50,8 @@ const handleSubmit = async () => {
       <img class="absolute -bottom-3 left-0 w-full" :src="service_underline" alt="Underline">
     </h2>
 
-    <div class="service_categories flex flex-wrap items-center lg:justify-between md:justify-between justify-center gap-4">
+    <div
+      class="service_categories flex flex-wrap items-center lg:justify-between md:justify-between justify-center gap-4">
       <p v-for="(category, index) in service_categories" :key="index"
         class="cursor-pointer capitalize lg:text-mh_h6 md:text-mh_h6 text-[16px] px-3 py-1 rounded-[4px]"
         :class="{ 'bg-[#F9E6E6] font-[600]': active_category === category }" @click="active_category = category">{{
@@ -189,8 +193,10 @@ const handleSubmit = async () => {
           difference in your life.
         </p>
 
-        <ButtonComponent text="Join us now"
-          mh_class="bg-mh_dark_text font-[500] px-10 text-[#f5eadf] lg:w-[80%] md:w-[80%] w-full" />
+        <a class="min-h-[50px] text-center flex items-center justify-center rounded-[8px] bg-mh_dark_text font-[500] px-10 text-[#f5eadf] lg:w-[80%] md:w-[80%] w-full"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSedVspZOoKKj8VMzOTGI_F4HYmwarDmoG9fEDFY4PSejEZupA/viewform?usp=sf_link"
+          target="_blank">Join us now
+        </a>
       </div>
     </div>
   </section>

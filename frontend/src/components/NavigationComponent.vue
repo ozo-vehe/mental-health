@@ -44,10 +44,12 @@ const show_navbar = ref(false);
     </div>
 
     <div class="signup_btn hidden lg:block md:block">
-      <RouterLink
+      <a
         class="p-[10px] w-[120px] h-[50px] py-2 test-center flex items-center justify-center rounded-[10px] bg-[#271a0c] text-mh_light capitalize"
-        to="/">Sign up
-      </RouterLink>
+        href="https://docs.google.com/forms/d/e/1FAIpQLSedVspZOoKKj8VMzOTGI_F4HYmwarDmoG9fEDFY4PSejEZupA/viewform?usp=sf_link"
+        target="_blank"
+        >Sign up
+      </a>
     </div>
 
     <!-- Mobile Navigation -->
@@ -73,7 +75,7 @@ const show_navbar = ref(false);
         </ul>
         <RouterLink
           class="font-[600] w-full h-[50px] py-2 flex items-center justify-center text-mh_subtle_text capitalize"
-          to="/" @click="show_navbar = !show_navbar">Sign up
+          to="https://docs.google.com/forms/d/e/1FAIpQLSedVspZOoKKj8VMzOTGI_F4HYmwarDmoG9fEDFY4PSejEZupA/viewform?usp=sf_link" @click="show_navbar = !show_navbar">Sign up
         </RouterLink>
       </div>
     </div>

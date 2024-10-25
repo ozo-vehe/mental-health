@@ -20,7 +20,11 @@ import ButtonComponent from "../components/ButtonComponent.vue";
       </p>
 
       <div class="hero_btn flex items-center justify-center mt-8">
-        <ButtonComponent text="Get Involved" mh_class="bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-5" />
+        <a class="min-w-[120px] min-h-[50px] text-center flex items-center justify-center rounded-[8px] bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-4"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSedVspZOoKKj8VMzOTGI_F4HYmwarDmoG9fEDFY4PSejEZupA/viewform?usp=sf_link"
+          target="_blank">
+          Get Involved
+        </a>
       </div>
     </div>
   </header>
@@ -90,8 +94,7 @@ import ButtonComponent from "../components/ButtonComponent.vue";
     <section class="bg-[#F5EADF] lg:px-20 md:px-12 px-4 py-20 flex flex-wrap gap-y-8 items-center justify-center">
       <div
         class="about_video w-[300px] h-[300px] rounded-[8px] bg-[#A5A4A4] flex items-center justify-center lg:order-1 md:order-1 order-2 overflow-hidden">
-        <img class="w-full h-full object-cover"
-          src="../assets/images/founder.jpeg" alt="Play Button" />
+        <img class="w-full h-full object-cover" src="../assets/images/founder.jpeg" alt="Play Button" />
       </div>
 
       <div
@@ -135,8 +138,10 @@ import ButtonComponent from "../components/ButtonComponent.vue";
             difference in your life.
           </p>
 
-          <ButtonComponent text="Join us now"
-            mh_class="bg-mh_dark_text font-[500] px-10 text-[#f5eadf] lg:w-[80%] md:w-[80%] w-full" />
+          <a class="min-h-[50px] text-center flex items-center justify-center rounded-[8px] bg-mh_dark_text font-[500] px-10 text-[#f5eadf] lg:w-[80%] md:w-[80%] w-full"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSedVspZOoKKj8VMzOTGI_F4HYmwarDmoG9fEDFY4PSejEZupA/viewform?usp=sf_link"
+            target="_blank">Join us now
+          </a>
         </div>
       </div>
     </section>

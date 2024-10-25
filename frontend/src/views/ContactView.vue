@@ -5,29 +5,34 @@ const name: Ref<String> = ref("");
 
 const socials = [
   {
-    icon: "https://img.icons8.com/ios-glyphs/90/ffffff/twitterx--v2.png",
+    icon: "https://img.icons8.com/ios-filled/ffffff/50/twitter.png",
     name: "X",
-    link: "/",
+    link: "http://x.com/hevo_lve",
   },
+  // {
+  //   icon: "https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png",
+  //   name: "Facebook",
+  //   link: "/",
+  // },
+  // {
+  //   icon: "https://img.icons8.com/windows/96/ffffff/whatsapp--v1.png",
+  //   name: "WhatsApp",
+  //   link: "/",
+  // },
   {
-    icon: "https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png",
-    name: "Facebook",
-    link: "/",
-  },
-  {
-    icon: "https://img.icons8.com/windows/96/ffffff/whatsapp--v1.png",
-    name: "WhatsApp",
-    link: "/",
-  },
-  {
-    icon: "https://img.icons8.com/windows/96/ffffff/instagram-new.png",
+    icon: "https://img.icons8.com/ios/ffffff/50/instagram-new.png",
     name: "Instagram",
-    link: "/",
+    link: "https://www.instagram.com/hevo_lve?igsh=YjQzczgyYXljdWxr&utm_source=qra",
   },
   {
-    icon: "https://img.icons8.com/windows/96/ffffff/linkedin.png",
+    icon: "https://img.icons8.com/ios-filled/ffffff/50/linkedin-2.png",
     name: "LinkedIn",
-    link: "/",
+    link: "https://www.linkedin.com/company/hevolves/",
+  },
+  {
+    icon: "https://img.icons8.com/ios-filled/ffffff/50/youtube-play.png",
+    name: "YouTube",
+    link: "https://www.youtube.com/@HE_volve",
   },
 ];
 
@@ -154,13 +159,13 @@ const handleSubmit = async () => {
     </div>
 
     <div class="contact_socials flex items-center justify-center gap-6 my-6">
-      <RouterLink v-for="(social, index) in socials" :key="index" :to="social.link">
+      <a v-for="(social, index) in socials" :key="index" :href="social.link" target="_blank">
         <img
           class="w-[32px] h-[32px] bg-[#130D06] p-1 rounded-[4px]"
           :src="social.icon"
           :alt="social.name"
         />
-      </RouterLink>
+      </a>
     </div>
   </main>
 </template>

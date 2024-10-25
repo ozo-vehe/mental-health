@@ -14,8 +14,11 @@ import ButtonComponent from "../components/ButtonComponent.vue";
       </h1>
 
       <div class="hero_btn flex items-center justify-center mt-8">
-        <ButtonComponent text="Share your experience"
-          mh_class="bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-5" />
+        <a class="min-w-[120px] min-h-[50px] text-center flex items-center justify-center rounded-[8px] bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-4"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf_Fo4kIKYY4osreH-FhpQ3PuPQTjy_lEYTdKrCCuxpEAr7UA/viewform"
+          target="_blank">
+          Share your experience
+        </a>
       </div>
     </div>
   </header>
@@ -29,7 +32,8 @@ import ButtonComponent from "../components/ButtonComponent.vue";
       </div>
 
       <div class="max-w-[650px] lg:order-2 md:order-2 order-1">
-        <h3 class="px-3 font-[700] lg:text-mh_h2 md:text-mh_h3 text-mh_h4 relative mb-2 leading-tight lg:text-left md:text-left text-center">
+        <h3
+          class="px-3 font-[700] lg:text-mh_h2 md:text-mh_h3 text-mh_h4 relative mb-2 leading-tight lg:text-left md:text-left text-center">
           Men go through challenges too
         </h3>
         <p
@@ -53,8 +57,11 @@ import ButtonComponent from "../components/ButtonComponent.vue";
             issues. It only takes a couple of minutes to make a difference.
           </p>
 
-          <ButtonComponent text="Share your experience"
-            mh_class="bg-[#130D06] font-bold px-12 text-mh_light text-[18px] py-3 lg:w-[50%] md:w-[70%] w-full" />
+          <a class="min-h-[50px] flex items-center justify-center rounded-[8px] bg-[#130D06] font-bold px-12 text-mh_light text-[18px] py-4 lg:w-[50%] md:w-[70%] w-full"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf_Fo4kIKYY4osreH-FhpQ3PuPQTjy_lEYTdKrCCuxpEAr7UA/viewform"
+            target="_blank">
+            Share your experience
+          </a>
         </div>
       </div>
     </section>
@@ -68,12 +75,14 @@ import ButtonComponent from "../components/ButtonComponent.vue";
           issues. It only takes a couple of minutes to make a difference.
         </p>
 
-        <ButtonComponent text="Share your experience"
-          mh_class="bg-[#130D06] font-bold px-12 text-mh_light text-mh_h6 py-3 lg:w-[50%] md:w-[70%] w-full" />
+        <a class="min-h-[50px] flex items-center justify-center rounded-[8px] bg-[#130D06] font-bold px-12 text-mh_light text-[18px] py-4 lg:w-[50%] md:w-[70%] w-full"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf_Fo4kIKYY4osreH-FhpQ3PuPQTjy_lEYTdKrCCuxpEAr7UA/viewform"
+          target="_blank">
+          Share your experience
+        </a>
       </div>
     </section>
   </main>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

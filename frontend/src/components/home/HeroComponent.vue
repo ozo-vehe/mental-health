@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ButtonComponent from "../ButtonComponent.vue";
+
 </script>
 
 <template>
@@ -21,7 +22,12 @@ import ButtonComponent from "../ButtonComponent.vue";
         </p>
 
         <div class="hero_btn flex items-center justify-start gap-7 mt-8">
-          <ButtonComponent text="Get Involved" mh_class="bg-mh_nude font-bold px-8 text-gray-900" />
+          <a class="min-w-[120px] min-h-[50px] text-center flex items-center justify-center rounded-[8px] bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-4 z-10"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSedVspZOoKKj8VMzOTGI_F4HYmwarDmoG9fEDFY4PSejEZupA/viewform?usp=sf_link"
+            target="_blank">
+            Get Involved
+          </a>
+
           <ButtonComponent text="Learn More" mh_class="text-mh_nude font-bold" />
         </div>
       </div>
@@ -41,9 +47,11 @@ import ButtonComponent from "../ButtonComponent.vue";
         </p>
 
         <div class="hero_btn flex items-center justify-start gap-7 mt-8">
-          <RouterLink to="/">
-            <ButtonComponent text="Share your story" mh_class="bg-mh_nude font-bold px-8 text-gray-900" />
-          </RouterLink>
+          <a class="min-w-[120px] min-h-[50px] text-center flex items-center justify-center rounded-[8px] bg-mh_nude font-bold px-12 text-gray-900 text-mh_h6 py-4 z-10"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf_Fo4kIKYY4osreH-FhpQ3PuPQTjy_lEYTdKrCCuxpEAr7UA/viewform"
+            target="_blank">
+            Share your story
+          </a>
         </div>
       </div>
     </div>
@@ -64,36 +72,44 @@ import ButtonComponent from "../ButtonComponent.vue";
 @keyframes image_fade {
   0% {
     opacity: 1;
+    z-index: 2;
   }
 
   45% {
     opacity: 1;
+    z-index: 2;
   }
 
   55% {
     opacity: 0;
+    z-index: 0;
   }
 
   100% {
     opacity: 0;
+    z-index: 0;
   }
 }
 
 @keyframes image_fade2 {
   0% {
     opacity: 0;
+    z-index: 0;
   }
 
   45% {
     opacity: 0;
+    z-index: 0;
   }
 
   55% {
     opacity: 1;
+    z-index: 2;
   }
 
   100% {
     opacity: 1;
+    z-index: 2;
   }
 }
 </style>

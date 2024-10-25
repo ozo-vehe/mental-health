@@ -5,28 +5,33 @@ const socials = [
   {
     icon: "https://img.icons8.com/ios-filled/50/linkedin-2.png",
     name: "LinkedIn",
-    link: "/",
+    link: "https://www.linkedin.com/company/hevolves/",
   },
-  {
-    icon: "https://img.icons8.com/ios-filled/50/facebook-new.png",
-    name: "Facebook",
-    link: "/",
-  },
+  // {
+  //   icon: "https://img.icons8.com/ios-filled/50/facebook-new.png",
+  //   name: "Facebook",
+  //   link: "/",
+  // },
   {
     icon: "https://img.icons8.com/ios-filled/50/twitter.png",
     name: "X",
-    link: "/",
+    link: "http://x.com/hevo_lve",
   },
   {
     icon: "https://img.icons8.com/ios/50/instagram-new.png",
     name: "Instagram",
-    link: "/",
+    link: "https://www.instagram.com/hevo_lve?igsh=YjQzczgyYXljdWxr&utm_source=qra",
   },
+  // {
+  //   icon: "https://img.icons8.com/ios/50/whatsapp.png",
+  //   name: "WhatsApp",
+  //   link: "/",
+  // },
   {
-    icon: "https://img.icons8.com/ios/50/whatsapp.png",
-    name: "WhatsApp",
-    link: "/",
-  },
+    icon: "https://img.icons8.com/ios-filled/50/youtube-play.png",
+    name: "YouTube",
+    link: "https://www.youtube.com/@HE_volve",
+  }
 ];
 // 130D06
 // 271a0c
@@ -44,14 +49,15 @@ const socials = [
         </div>
 
         <div class="socials lg:flex md:flex hidden gap-4">
-          <RouterLink
-            class="bg-mh_light rounded-full w-[35px] h-[35px] p-2"
+          <a
+            class="bg-mh_light flex items-center justify-center rounded-full w-[35px] h-[35px] p-2"
             v-for="(social, index) in socials"
             :key="index"
-            :to="social.link"
+            :href="social.link"
+            target="_blank"
           >
             <img class="" :src="social.icon" :alt="social.name" />
-          </RouterLink>
+          </a>
         </div>
       </div>
 
@@ -59,7 +65,7 @@ const socials = [
         <h3 class="text-mh_h6 uppercase font-[600] mb-2">info</h3>
         <ul>
           <li>
-            <RouterLink class="text-mh_light capitalize" to="/">about</RouterLink>
+            <RouterLink class="text-mh_light capitalize" to="/about">about</RouterLink>
           </li>
 
           <li>
@@ -67,7 +73,7 @@ const socials = [
           </li>
 
           <li>
-            <RouterLink class="text-mh_light capitalize" to="/">contact</RouterLink>
+            <RouterLink class="text-mh_light capitalize" to="/contact">contact</RouterLink>
           </li>
 
           <li>
@@ -80,11 +86,11 @@ const socials = [
         <h3 class="text-mh_h6 uppercase font-[600] mb-2">resources</h3>
         <ul>
           <li>
-            <RouterLink class="text-mh_light capitalize" to="/">services</RouterLink>
+            <RouterLink class="text-mh_light capitalize" to="/services">services</RouterLink>
           </li>
 
           <li>
-            <RouterLink class="text-mh_light capitalize" to="/">contact</RouterLink>
+            <RouterLink class="text-mh_light capitalize" to="/contact">contact</RouterLink>
           </li>
 
           <li>
@@ -127,14 +133,15 @@ const socials = [
     </div>
 
     <div class="socials lg:hidden md:hidden flex gap-4 mt-8">
-      <RouterLink
+      <a
         class="bg-mh_light rounded-full w-[35px] h-[35px] p-2"
         v-for="(social, index) in socials"
         :key="index"
-        :to="social.link"
+        :href="social.link"
+        target="_blank"
       >
         <img class="" :src="social.icon" :alt="social.name" />
-      </RouterLink>
+      </a>
     </div>
 
     <div class="footer_copywrites border-t mt-8 py-10 w-[90%]">
